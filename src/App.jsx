@@ -1,15 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HomePage } from './pages/home'
+import { AboutPage } from './pages/about'
+import { ProductstPage } from './pages/products'
+import { ContactPage } from './pages/contact'
 
 
 const App = () => {
 return (
-<main className="min-h-dvh grid place-items-center bg-slate-50">
-<h1 className="text-3xl font-bold text-slate-800">
-Quando!
-</h1>
-</main>
-);
+    <>
+
+      <BrowserRouter>
+
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/about' element={<AboutPage />} />
+          <Route path='/products' element={<ProductstPage />} />
+          <Route path='/contact' element={<ContactPage />} />
+     
+        </Routes>
+      
+      </BrowserRouter>
+    
+    </>
+  )
 }
+
 export default App
