@@ -2,15 +2,23 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-dark: #1f1f1f;         /* Fundo escuro elegante */
-  --color-brand-black: #0f0f0f;        /* Preto suave */
-  --color-brand-metal-light: #e3e3e3;  /* Prata clara - texto principal */
-  --color-brand-metal-medium: #b5b5b5; /* Prata média - detalhes */
-  --color-brand-white: #f5f5f5;        /* Quase branco metálico */
+  /* 🎀 Cores principais da marca */
+  --color-brand-pink-light: #F5B8C5;   /* Fundo rosa claro */
+  --color-brand-pink: #E998A9;         /* Rosa suave do texto secundário */
+  --color-brand-white: #ffffff;        /* Texto branco */
+  --color-brand-dark: #d18a96;         /* Rosa mais escuro (opcional para contraste) */
 
-  /* Aplicações */
-  --color-bg-base: var(--color-brand-dark);
-  --color-bg-light: var(--color-brand-black);
-  --color-text-main: var(--color-brand-metal-light);
-  --color-accent: var(--color-brand-metal-medium);
+  /* 🎈 Cores dos balões */
+  --color-balloon-pink: #E84C81;
+  --color-balloon-purple: #A44CB3;
+  --color-balloon-blue: #3BA7FF;
+  --color-balloon-yellow: #FFC145;
+  --color-balloon-green: #46D5A7;
+  --color-balloon-orange: #FF834E;
+
+  /* 🎯 Aplicações práticas */
+  --color-bg-base: var(--color-brand-pink-light);
+  --color-bg-light: var(--color-brand-pink);
+  --color-text-main: var(--color-brand-white);
+  --color-accent: var(--color-balloon-pink);
 }
