@@ -1,7 +1,6 @@
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { HomePage } from './pages/home'
-import { AboutPage } from './pages/about'
 import { ProductstPage } from './pages/products'
 import { ContactPage } from './pages/contact'
 
@@ -14,7 +13,6 @@ return (
 
         <Routes>
           <Route path='/' element={<HomePage />} />
-          <Route path='/about' element={<AboutPage />} />
           <Route path='/products' element={<ProductstPage />} />
           <Route path='/contact' element={<ContactPage />} />
      

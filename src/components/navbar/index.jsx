@@ -7,7 +7,7 @@ export const Navbar = () => {
   const totalItems = 0; // Substituir depois pela lógica real do carrinho
 
   return (
-    <header className="bg-brand-pink-light w-full shadow-md relative">
+    <header className="bg-brand-dark w-full shadow-md relative">
       {/* ✅ Topo da Navbar */}
       <div className="flex items-center max-w-7xl mx-auto px-4 py-3 gap-4">
 
@@ -54,11 +54,10 @@ export const Navbar = () => {
 
       {/* ✅ Navegação para DESKTOP */}
       <nav className="hidden md:flex bg-brand-blue-dark shadow-inner shadow-brand-blue-dark/50">
-        <ul className="flex justify-center gap-8 max-w-7xl mx-auto py-3 text-brand-metal-light font-bold text-lg">
-          <li><Link to="/" className="hover:text-brand-metal-medium transition">HOME</Link></li>
-          <li><Link to="/products" className="hover:text-brand-metal-medium transition">PRODUTOS</Link></li>
-          <li><Link to="/about" className="hover:text-brand-metal-medium transition">INSTITUCIONAL</Link></li>
-          <li><Link to="/contact" className="hover:text-brand-metal-medium transition">CONTATOS</Link></li>
+        <ul className="flex justify-center gap-8 max-w-7xl mx-auto py-3 text-pink-800 font-bold text-lg">
+          <li><Link to="/" className="hover:text-pink-600 transition">HOME</Link></li>
+          <li><Link to="/products" className="hover:hover:text-pink-600 text-brand-metal-medium transition">PRODUTOS</Link></li>
+          <li><Link to="/contact" className="hover:hover:text-pink-600 transition">CONTATOS</Link></li>
         </ul>
       </nav>
 
@@ -71,9 +70,6 @@ export const Navbar = () => {
             </li>
             <li>
               <Link onClick={() => setIsMenuOpen(false)} to="/products" className="py-2 w-full text-center hover:text-brand-metal-medium">PRODUTOS</Link>
-            </li>
-            <li>
-              <Link onClick={() => setIsMenuOpen(false)} to="/about" className="py-2 w-full text-center hover:text-brand-metal-medium">INSTITUCIONAL</Link>
             </li>
             <li>
               <Link onClick={() => setIsMenuOpen(false)} to="/contact" className="py-2 w-full text-center hover:text-brand-metal-medium">CONTATOS</Link>
