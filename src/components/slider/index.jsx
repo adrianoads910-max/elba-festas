@@ -50,7 +50,7 @@ export default function BannerSlider() {
             />
 
             {/* Overlay escuro suave para destacar texto */}
-            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/50 transition-all"></div>
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all"></div>
 
             {/* Título centralizado */}
             <h2 className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center text-white text-xl md:text-3xl font-bold drop-shadow-lg">

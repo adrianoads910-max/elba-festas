@@ -7,7 +7,7 @@ export const Navbar = () => {
   const totalItems = 0; // Substituir depois pela lógica real do carrinho
 
   return (
-    <header className="bg-brand-dark w-full shadow-md relative">
+    <header className="bg-brand-blue-dark w-full shadow-md relative">
       {/* ✅ Topo da Navbar */}
       <div className="flex items-center max-w-7xl mx-auto px-4 py-3 gap-4">
 
@@ -23,18 +23,18 @@ export const Navbar = () => {
             placeholder="Pesquisar produtos..."
             className="
               w-full px-4 py-2 border border-brand-metal-medium rounded-full 
-              text-brand-metal-light placeholder-brand-metal-light
+              text-brand-gray placeholder-brand-gray
               focus:outline-none focus:ring-2 focus:ring-brand-metal-medium
             "
           />
-          <Search className="absolute right-3 top-2.5 text-brand-metal-medium" size={20} />
+          <Search className="absolute right-3 top-2.5 text-brand-gray" size={20} />
         </div>
 
         {/* ✅ Ícones (carrinho + menu mobile) */}
         <div className="flex items-center gap-3 flex-shrink-0">
           {/* Carrinho */}
           <Link to="/cart" className="relative hover:scale-105 transition-transform">
-            <ShoppingCart size={24} className="text-brand-metal-light" />
+            <ShoppingCart size={24} className="text-brand-gray" />
             {totalItems > 0 && (
               <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
                 {totalItems}
@@ -45,7 +45,7 @@ export const Navbar = () => {
           {/* Botão menu (mobile) */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="p-2 md:hidden text-brand-metal-light hover:bg-brand-blue-dark rounded-lg"
+            className="p-2 md:hidden text-brand-gray hover:bg-brand-blue-dark rounded-lg"
           >
             <Menu size={26} />
           </button>
@@ -54,10 +54,10 @@ export const Navbar = () => {
 
       {/* ✅ Navegação para DESKTOP */}
       <nav className="hidden md:flex bg-brand-blue-dark shadow-inner shadow-brand-blue-dark/50">
-        <ul className="flex justify-center gap-8 max-w-7xl mx-auto py-3 text-pink-800 font-bold text-lg">
-          <li><Link to="/" className="hover:text-pink-600 transition">HOME</Link></li>
-          <li><Link to="/products" className="hover:hover:text-pink-600 text-brand-metal-medium transition">PRODUTOS</Link></li>
-          <li><Link to="/contact" className="hover:hover:text-pink-600 transition">CONTATOS</Link></li>
+        <ul className="flex justify-center gap-8 max-w-7xl mx-auto py-3 text-brand-gray font-bold text-lg">
+          <li><Link to="/" className="hover:text-brand-blue-light transition">HOME</Link></li>
+          <li><Link to="/products" className="hover:hover:text-brand-blue-light text-brand-metal-medium transition">PRODUTOS</Link></li>
+          <li><Link to="/contact" className="hover:hover:text-brand-blue-light transition">CONTATOS</Link></li>
         </ul>
       </nav>
 

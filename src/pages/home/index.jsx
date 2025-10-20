@@ -40,7 +40,7 @@ const SHOWCASE = [
 
 const VALUES = [
   {
-    icon: <Target size={48} className="text-brand-metal-light" />,
+    icon: <Target size={48} className="text-brand-gray" />,
     title: "MISSÃO",
     bgColor: "bg-brand-dark",
     items: [
@@ -108,7 +108,7 @@ const GROUP = [
 export const HomePage = () => {
 
     return (
-        <main className="bg-brand-pink-light">
+        <main className="bg-brand-gray">
             <header>
                 <Navbar/>
             </header>
@@ -118,11 +118,11 @@ export const HomePage = () => {
             </div>
             <section className="bg-brand-pink-light">
                 <article>
-                    <h2 className="text-xl md:text-5xl lg:text-left font-bold text-amber-50  p-6">Nossos Serviços</h2>
+                    <h2 className="text-xl md:text-5xl lg:text-left font-bold text-brand-blue-dark  p-6">Nossos Serviços</h2>
                 </article>   
                  <picture className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {SHOWCASE.map((item) => (
-                        <section key={item.img.src} className="text-neutral-50 p-3">
+                        <section key={item.img.src} className="text-brand-blue-dark p-3">
                         <div className="relative overflow-hidden group rounded-2xl">
                             <img
                                 src={item.img.src}
@@ -130,7 +130,7 @@ export const HomePage = () => {
                                 className="rounded-2xl w-full h-64 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
                             />
                             <div className="absolute bottom-0 left-0 w-full bg-amber-50 py-2 text-center transition-colors duration-300 group-hover:bg-brand-purple">
-                                <p className="text-brand-dark  text-lg font-extrabold tracking-wide uppercase">
+                                <p className="text-brand-blue-dark  text-lg font-extrabold tracking-wide uppercase">
                                 {item.category}
                                 </p>
                             </div>
@@ -139,13 +139,13 @@ export const HomePage = () => {
                     ))}
                 </picture>
                   <section className="right-6 sm:right-10 flex justify-items-start p-4">
-                    <button className="text-amber-50 bg-brand-dark hover:bg-brand-pink-light text-lg font-medium border-2 rounded-full p-6">Entre em contato</button>
+                    <button className="text-amber-50 bg-brand-blue-light hover:bg-brand-blue-dark text-lg font-medium border-2 rounded-full p-6">Entre em contato</button>
                   </section>
             </section>      
             <div className="flex flex-col lg:flex-row items-center max-w-screen-xl mx-auto p-8 gap-12">
                 <section className="lg:w-1/2">
-                    <h3 className="text-xl md:text-5xl lg:text-center font-bold text-amber-50  p-6">Construindo sonhos desde 2000</h3>
-                     <p className="text-xl md:text-xl text-center lg:text-center text-amber-50 font-semibold p-2">Transformamos momentos especiais em memórias inesquecíveis. Com painéis personalizados, peças decorativas e toalhas que encantam, damos vida a cada detalhe da sua celebração.</p>
+                    <h3 className="text-xl md:text-5xl lg:text-center font-bold text-brand-blue-dark  p-6">Construindo sonhos desde 2000</h3>
+                     <p className="text-xl md:text-xl text-center lg:text-center text-brand-blue-dark font-semibold p-2">Transformamos momentos especiais em memórias inesquecíveis. Com painéis personalizados, peças decorativas e toalhas que encantam, damos vida a cada detalhe da sua celebração.</p>
                 </section>
                  <section className="lg:w-1/2">
                         <div className="relative overflow-hidden group rounded-2xl">
@@ -161,7 +161,7 @@ export const HomePage = () => {
         
            <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8 ">
                 {VALUES.map((item) => (
-                    <section key={item.title} className={`flex flex-col items-center text-center text-brand-blue-dark border p-6 rounded-2xl space-y-4 border-amber-50 ${item.bgColor}  hover:bg-brand-pink hover:text-amber-50`}>
+                    <section key={item.title} className={`flex flex-col items-center text-center text-amber-50 border p-6 rounded-2xl space-y-4 border-amber-50 ${item.bgColor}  hover:bg-brand-blue-dark`}>
                      <div className="mb-4">
                         {item.icon}
                     </div>
@@ -182,17 +182,17 @@ export const HomePage = () => {
         </section>
             <div>
                 <article>
-                    <h3 className="text-xl md:text-5xl lg:text-left font-bold text-amber-50 p-6">Conheça nossa equipe:</h3>
+                    <h3 className="text-xl md:text-5xl lg:text-left font-bold text-brand-blue-dark p-6">Conheça nossa equipe:</h3>
                 </article>
                 <picture className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {GROUP.map((item) => (
-                        <section key={item.img.src} className="text-neutral-50 p-3">
+                        <section key={item.img.src} className="text-brand-blue-dark p-3">
                         <div className="relative overflow-hidden group rounded-2xl">
                             <img
                                 src={item.img.src}
                                 alt={item.img.alt}
                                 className="rounded-2xl w-full h-64 object-cover"/>
-                                <p className="text-amber-50 text-lg font-extrabold tracking-wide uppercase p-4">
+                                <p className="text-brand-blue-dark text-lg font-extrabold tracking-wide uppercase p-4">
                                 {item.text}
                                 </p>
                         </div>

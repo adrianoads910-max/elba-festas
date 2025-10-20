@@ -2,7 +2,7 @@ import { Instagram, Facebook, PhoneCall, MapPin } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-brand-dark text-brand-metal-light py-8">
+    <footer className="bg-brand-blue-dark text-brand-gray py-8">
       <div className="max-w-7xl mx-auto px-4 text-center flex flex-col items-center gap-6">
 
         {/* ✅ Logo */}
